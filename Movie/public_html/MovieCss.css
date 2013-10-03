@@ -1,0 +1,45 @@
+/* 
+    Document   : MovieCss
+    Created on : 3 Oct, 2013, 4:43:33 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#container{ 
+    background-color:#EEEEEE;
+    margin:30px 30px 30px 30px;
+    height:500px;
+    width:1200px;
+}
+#topDivLeft{
+    background-color: #66CCFF;
+    height:50px;
+    width:800px;
+    float:left;
+}
+#topDivRight{
+    float: right;
+    background-color:#66CCFF;
+    height:50px;
+    width:400px;
+    text-align: right;
+}
+#searchButton{
+    width: 30px;
+    height: 19px;
+}
+#mainImage{
+    height: 100px;
+    width:100px;
+    
+    
+}
+#topAdvertisement{
+    height:100px;
+    width: 900px;
+    margin: 20px 20px 20px 50px;
+    float:right;
+    text-align: right;
+}
+
