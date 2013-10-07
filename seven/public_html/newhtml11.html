@@ -1,0 +1,63 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  
+  $("#d1,#d2,#d3,#d4").hover(function(){
+    for(count=1;count<3;count++){
+    $("#d1").animate({left:'+=100px'});
+    $("#d2").animate({left:'+=100px'});
+    $("#d3").animate({left:'+=100px'});
+    $("#d4").animate({left:'+=100px'});
+    }
+    },function(){
+    for(count=1;count<3;count++){
+    $("#d1").animate({left:'-=100px'});
+    $("#d2").animate({left:'-=100px'});
+    $("#d3").animate({left:'-=100px'});
+    $("#d4").animate({left:'-=100px'});
+    }
+    });
+});
+</script> 
+</head>
+ 
+<body>
+<button>Start Animation</button>
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+<div style="width:400px;height:100px;border: 1px solid black;overflow:hidden;">
+
+<div id="d1" style="background:#98bf21;height:100px;width:100px;float:left;position:absolute;margin-left:-150px;">
+</div>
+
+<div id="d2" style="background:red;height:100px;width:100px;float:left;position:absolute;margin-left:0px;">
+</div>
+ 
+<div id="d3" style="background:blue;height:100px;width:100px;float:left;position:absolute;margin-left:150px;">
+</div>
+    
+<div id="d4" style="background:yellow;height:100px;width:100px;float:left;position:absolute;margin-left:300px;">
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+<h4>Music Reviews</h4>
+                        <a class="movieNames" href="">Zachariyayude Garbhinikal</a></br></br>
+                        <a class="movieNames" href="">Singaravelan</a></br></br>
+                        <a class="movieNames" href="">Ezhamathe Varavu</a>
+                        <a href="">More article</a>
+                        <figure>
+                            <img id="malayalamMovieMusic" src="images/Sringara-Velan_21_t.jpg" alt="Sringara-Velan" onclick="">
+                            <figcaption id="malayalamFigCaptionMusic" style="">Sringaravelan</figcaption>
+                        </figure>

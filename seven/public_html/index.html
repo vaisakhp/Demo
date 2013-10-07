@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="MovieCss.css"/>
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="topDivLeft">
+                Follow on us:
+                <img class="follow" src="" alt="facebook"/>&nbsp
+                <img class="follow" src="" alt="twitter"/>&nbsp
+                <img class="follow" src="" alt="google plus"/>&nbsp
+                <a class="follow" href="Home.html">Home</a>&nbsp
+                <a class="follow" href="Feedback.html">Feedback</a>&nbsp;
+                <a class="follow" href="TellAFriend.html">Tell A Friend</a>
+            </div>
+            <div id="topDivRight">
+                <a class="follow" href="LogIn.html">Login</a>&nbsp;&nbsp;
+                <input class="follow" type="text"/>
+                <input class="follow" type="button"/>
+            </div>
+            <div id="mainImage">
+                <img src="images/film.jpeg"/>
+            </div>
+
+            <div class="display">
+                <img class="display" src="images/example-slide-1.jpg"/>
+                <img class="display" src="images/example-slide-2.jpg"/>
+                    
+            </div>
+            <div id="languaeMenu">
+                <button class="languageMenuButton">English</button>
+                <button class="languageMenuButton">Hindi</button>
+                <button class="languageMenuButton">Malayalam</button>
+                <button class="languageMenuButton" id="login">Login</button>
+                <button class="languageMenuButton" id="register">Register</button>
+            </div>
+            <div id="mainMenu">
+                <button class="languageMenuButton menu">Movie Review</button></br>
+                <button class="languageMenuButton menu">Music Review</button></br>
+                <button class="languageMenuButton menu">News</button></br>
+                <button class="languageMenuButton menu">Interview</button></br>
+                <button class="languageMenuButton menu">Gallery</button></br>
+            </div>
+            </br>
+            <div id="advertisement">
+                Advertisement
+            </div>
+
+
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <!-- include Cycle plugin -->
+        <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.display').cycle({
+                    fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                });
+            });
+        </script> 
+
+    </body>
+</html>
+
+
+
+
+
+

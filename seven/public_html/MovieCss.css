@@ -1,0 +1,195 @@
+/* 
+    Document   : MovieCss
+    Created on : 3 Oct, 2013, 4:43:33 PM
+    Author     : user
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#container{ 
+    background-color:#EEEEEE;
+    margin:30px 30px 30px 30px;
+    height:1500px;
+    width:1200px;
+}
+#topDivLeft{
+    background-color: #66CCFF;
+    height:50px;
+    width:800px;
+    float:left;
+}
+#topDivRight{
+    float: right;
+    background-color:#66CCFF;
+    height:50px;
+    width:400px;
+    text-align: right;
+}
+#searchButton{
+    width: 30px;
+    height: 19px;
+}
+#mainImage{
+    height: 100px;
+    width:100px;
+    
+    
+}
+
+.display { height: 232px; width: 800px;float:right;margin-right: 100px;}
+.display img { padding: 15px; border: 1px solid #ccc; background-color: #eee; }
+
+#languaeMenu{
+    background-color: #66CCFF;
+    height: 45px;
+    margin-left: 246px;
+    margin-right: 231px;
+    margin-top: 281px;
+    width: 936px;
+}
+.languageMenuButton
+{
+  border: 1px solid #777777;
+  background: #6699FF;
+  color: white;
+  font: bold 11px 'Trebuchet MS';
+  padding: 4px;
+  cursor: pointer;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100px;
+}
+#login{
+    margin-left: 350px;
+}
+#mainMenu{
+     background-color: #66CCFF;
+    height: 200px;
+    margin-left: 13px;
+    width: 233px;
+    text-align: center;
+}
+.menu{
+    width: 205px;
+    
+}
+.follow{
+    margin-top: 10px;
+}
+#advertisement{
+        background-color: whitesmoke;
+    height: 139px;
+    margin-left: 15px;
+    margin-top: -5px;
+    padding: 4px;
+    width: 222px;
+}
+#mainDiv{
+    
+    background-color: #F5F5F5;
+    float: right;
+    height: 800px;
+    margin-right: 19px;
+    margin-top: -346px;
+    padding: 4px;
+    width: 910px;
+}
+#malayalamMovie{
+    margin-left: 229px;
+    margin-top:-103px;
+    width:100px;
+    height:100px;
+    
+}
+.movieNames{
+    text-decoration: none;
+    text-decoration-color: black;
+    
+}
+#movieReview{
+    
+    float: left;
+    height: 257px;
+    margin-left: 5px;
+    width: 453px;
+}
+#malayalamFigCaption{
+   margin-left: 217px; 
+}
+#musicReview{
+    
+    float: right;
+    height: 275px;
+    width: 452px;
+    
+}
+#malayalamFigCaptionMusic{
+    margin-left: 217px;
+    
+}
+#malayalamMovieMusic{
+    margin-left: 229px;
+    margin-top:-103px;
+    width:100px;
+    height:100px;
+}
+#news{
+    
+    float: left;
+    height: 257px;
+    margin-left: 5px;
+    width: 453px;
+}
+#interview{
+    
+    float: right;
+    height: 257px;
+    margin-top: -18px;
+    width: 452px;
+}
+#gallery{
+    
+    float: left;
+    height: 278px;
+    margin-left: 5px;
+    width: 898px;
+    
+}
+#actorGallery{
+    
+    height: 281px;
+    width: 260px;
+}
+#actressGallery{
+   
+    float: right;
+    height: 281px;
+    margin-top: -280px;
+    width: 260px;
+}
+#movieStills{
+    
+    float: right;
+    height: 282px;
+    margin-top: -281px;
+    width: 378px;
+}
+#bottomDiv{
+     
+    float: left;
+    height: 198px;
+    margin-top: -15px;
+    width: 907px;
+    text-align: center;
+}
+#bottomMenu{
+    text-align: center;
+}
+#bottomAdvertisement{
+        background-color: #F5F5F5;
+    height: 154px;
+    margin-left: -4px;
+    width: 918px;
+}

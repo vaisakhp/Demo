@@ -1,0 +1,153 @@
+                                                                     
+<html>
+    <head>
+        <title>Jquery Registration page validation</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js">
+        
+        </script>
+        <script type="text/javascript">
+            var userName = new Array();
+            var password = new Array();
+            var userPointer = 0;
+            var uname="",pass="";
+    
+            $(document).ready(function() {
+                $("#b1").click(function(){
+                $("#loginDiv").toggle();
+                $("#signUp").hide();
+                });
+                $("#b2").click(function(){
+                $("#signUp").toggle();
+                $("#loginDiv").hide();
+                });
+                $('#submit').click(function(event) {
+                    event.preventDefault();
+                    var user = $('#user').val();
+                    var pass = $('#pass').val();
+                    var rpass = $('#rpass').val();
+                    var email = $('#email').val();
+                    var gender = $('#gender').val();
+
+                    if (user == ""){
+                        $('#dis').slideDown().html('<span id="error">Please type Username</span>');
+                        return false;
+                    }
+                    else{
+                        userName[userPointer] = user;
+                        password[userPointer] = pass;
+                        userPointer++;
+                        
+                        
+                    }
+                    if (pass == "")
+                    {
+                        $('#dis').slideDown().html('<span id="error">Please type Password</span>');
+                        return false;
+                    }
+                    if (rpass == "")
+                    {
+                        $('#dis').slideDown().html('<span id="error">Again type Password</span>');
+                        return false;
+                    }
+                    if (pass != rpass)
+                    {
+                        $('#dis').slideDown().html('<span id="error">Password mismatch</span>');
+                        return false;
+                    }
+                    if (email == "")
+                    {
+                        $('#dis').slideDown().html('<span id="error">Please type email</span>');
+                        return false;
+                    }
+
+                    var filter = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (!filter.test(email))
+                    {
+                        $('#dis').slideDown().html('<span id="error">Please type correct email</span>');
+                        return false;
+                    }
+                    if ($("#gender:checked").length = 0) {
+                        $('#dis').slideDown().html('<span id="error">Please choose gender</span>');
+                        return false;
+                    }
+                    var a=document.getElementById("user");
+                    a.value="";
+                    var a=document.getElementById("pass");
+                    a.value="";
+                    var a=document.getElementById("rpass");
+                    a.value="";
+                    var a=document.getElementById("email");
+                    a.value="";
+                    
+                 });
+                
+                 $("#loginButton").click(function() {
+                     
+                
+                     uname=document.getElementById("username");
+                     pass=document.getElementById("password");
+                     
+                     for(var i=0;i<userName.length;i++)
+                     {
+                         if(uname.value==userName[i]&& pass.value==password[i]){
+                             alert("Validation Sucess!!!");
+                             $("#mainDiv").load("mainDiv.html");
+                             $("#languaeMenu").load("languageMenu.html.html");
+                         }
+                         else
+                            $('#dis').slideDown().html('<span id="error">Invalid Username or password</span>'); 
+                     }
+                 });
+            });
+        </script>
+        <style type="text/css">
+            #dis
+            {
+                text-align:center;
+                height: 25px;
+                width: 250px;
+                background-color:#46DAFF;
+                color:#000;
+            }
+            #tex
+            {
+                width:120px;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="b1">SignUp</button>
+        <div id="loginDiv" style="display:none;">
+        <fieldset style="width:290px;">
+            <form method="post" action="">
+                <h1 style="font-size:18px;">Jquery Registration page validation</h1>
+                <label id="dis" style="width:250px;"></label><br>
+                Username:
+                <input type="text" name="user" id="user" /><br /><br />
+
+                Password:
+                <input type="password" name="pass" id="pass" /><br /><br />
+
+                Re-type Password:
+                <input type="password" name="pass" id="rpass" /><br /><br />
+
+                Email:
+                <input type="text" name="email" id="email"><br /><br />
+
+                Gender:
+                <input type="radio" name="gender" id="gender"> Male
+                <input type="radio" name="gender" id="gender"> Female<br>
+                <br>
+                <center><input type="submit" name="submit" id="submit" value="Submit" /></center>
+            </form>
+        </fieldset>
+        </div>
+        <button id="b2">Login</button>
+        <div id="signUp" style="display:none">
+            <input type="text" id="username" /><br /><br />
+            <input type="text" id="password" /><br /><br />
+            <input type="button" id="loginButton" onClick="validate()" value="Login"/><br /><br />
+        </div>
+    </body>
+</html>

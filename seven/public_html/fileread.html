@@ -1,0 +1,20 @@
+    <HTML>
+    <HEAD>
+    <TITLE>"Text File"</TITLE>
+    <SCRIPT LANGUAGE = JAVASCRIPT>
+    function handleFile() {
+    var myFile = document.getElementById('txtF');
+    var fileContents = System.IO.File.ReadAllLines(myFile);
+    document.form1.textfield.value=fileContents;
+    }
+    </SCRIPT>
+    </HEAD>
+    <BODY>
+    <input type="file" id="aFile" name="txtF"/>
+    <form name="form1">
+    <input type="text" name="textfield" value="">
+    </form>
+    <input type="button" value="Read File" onclick="handleFile();">
+    <!-- <button onclick="loadTxtDoc('textfile.txt')">Click</button> //-->
+    </BODY>
+    </HTML>
